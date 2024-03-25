@@ -1,0 +1,20 @@
+[package]
+name = "pingora-rustls"
+version = "0.1.0"
+license = "Apache-2.0"
+edition = "2021"
+repository = "https://github.com/cloudflare/pingora"
+categories = ["asynchronous", "network-programming"]
+keywords = ["async", "tls", "ssl", "pingora"]
+description = """
+Rustls async APIs for Pingora.
+"""
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "pingora_rustls"
+path = "src/lib.rs"
+
+[dependencies]
+rustls = "0.23"
+tokio-rustls = "0.26"
